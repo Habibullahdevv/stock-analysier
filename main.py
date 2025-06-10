@@ -30,7 +30,7 @@ if 'current_price' not in st.session_state:
 
 st.title("Stock Price Alert System")
 
-ticker = st.text_input("Enter stock ticker (e.g., RELIANCE.NS)", value="RELIANCE.NS")
+ticker = st.text_input("Enter stock ticker (e.g., RELIANCE.NS)", value="")
 target_price = st.number_input("Set target price", min_value=0.0, value=120.0)
 
 sender_email = st.text_input("Sender Email (Gmail)", value="")
